@@ -71,7 +71,7 @@ if __name__ == "__main__":
 
     # Required positional argument
     parser.add_argument("data_dir", help="Dataset path with pdfs")
-    parser.add_argument("max_page", 20, help="Max Page")
     parser.add_argument("out_dir", help="Output path with pngs")
+    parser.add_argument("--max_page", 20, help="Max Page")
     args = parser.parse_args()
     main(args)
