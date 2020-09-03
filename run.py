@@ -33,7 +33,7 @@ def main(args):
         command = (
             "convert -background white  -alpha remove -alpha off -density 200 '"
             + g_f
-            + "'[1-+" + str(args.max_page) + "+]  png24:dataset/"
+            + "'[1-" + str(args.max_page) + "]  png24:dataset/"
             + g
             + "-%04d.png"
         )
