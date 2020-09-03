@@ -33,7 +33,7 @@ def main(args):
         command = (
             "convert -background white  -alpha remove -alpha off -density 200 '"
             + g_f
-            + "'[1-12]  png24:dataset/"
+            + "'[1-+" + str(args.max_page) + "+]  png24:dataset/"
             + g
             + "-%04d.png"
         )
@@ -71,6 +71,7 @@ if __name__ == "__main__":
 
     # Required positional argument
     parser.add_argument("data_dir", help="Dataset path with pdfs")
+    parser.add_argument("max_page", 20, help="Max Page")
     parser.add_argument("out_dir", help="Output path with pngs")
     args = parser.parse_args()
     main(args)
