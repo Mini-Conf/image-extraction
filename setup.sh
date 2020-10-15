@@ -1,8 +1,4 @@
 # Install code
-# Create Environments
-conda create -n paperviz python==3.6.9 -y
-conda activate paperviz
-
 pip install cython
 pip install ipython
 pip install opencv-python
