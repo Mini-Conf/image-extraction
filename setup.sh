@@ -10,6 +10,6 @@ wget https://raw.githubusercontent.com/ibm-aur-nlp/PubLayNet/master/pre-trained-
 
 # Install (and path) imagemagick
 pip install pillow
-apt-get install imagemagick
-sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/g' /etc/ImageMagick-6/policy.xml
+sudp apt-get install imagemagick
+sudo sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/g' /etc/ImageMagick-6/policy.xml
 
