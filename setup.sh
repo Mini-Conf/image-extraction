@@ -1,4 +1,16 @@
 # Install code
+# Create Environments
+conda create -n paperviz python==3.6.9 -y
+conda activate paperviz
+
+pip install cython
+pip install ipython
+pip install opencv-python
+conda install pytorch-nightly -c pytorch -y
+conda install protobuf -y
+pip install future
+pip install pycocotools
+pip install scipy
 pip install git+https://github.com/facebookresearch/fvcore.git
 git clone https://github.com/facebookresearch/detectron detectron_repo
 pip install -U -e detectron_repo
@@ -12,4 +24,3 @@ wget https://raw.githubusercontent.com/ibm-aur-nlp/PubLayNet/master/pre-trained-
 pip install pillow
 sudo apt-get install imagemagick
 sudo sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/g' /etc/ImageMagick-6/policy.xml
-
