@@ -3,7 +3,7 @@ pip install cython
 pip install ipython
 pip install opencv-python
 conda install pytorch-nightly -c pytorch -y
-conda install protobuf -y
+pip install protobuf
 pip install future
 pip install pycocotools
 pip install scipy
