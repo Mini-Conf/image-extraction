@@ -183,7 +183,7 @@ def main(args):
             csv_writer = csv.writer(csv_out, delimiter=';', quotechar='"')
             # Save one box per line
             for i, box in enumerate(boxes):
-                if box[-1] < 0.8:
+                if box[-1] < 0.65:
                     continue
                 if classes[i] not in [5]:
                     continue

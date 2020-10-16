@@ -1,4 +1,12 @@
 # Install code
+pip install cython
+pip install ipython
+pip install opencv-python
+conda install pytorch-nightly -c pytorch -y
+pip install protobuf
+pip install future
+pip install pycocotools
+pip install scipy
 pip install git+https://github.com/facebookresearch/fvcore.git
 git clone https://github.com/facebookresearch/detectron detectron_repo
 pip install -U -e detectron_repo
@@ -10,6 +18,5 @@ wget https://raw.githubusercontent.com/ibm-aur-nlp/PubLayNet/master/pre-trained-
 
 # Install (and path) imagemagick
 pip install pillow
-apt-get install imagemagick
-sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/g' /etc/ImageMagick-6/policy.xml
-
+sudo apt-get install imagemagick
+sudo sed -i 's/<policy domain="coder" rights="none" pattern="PDF" \/>/<policy domain="coder" rights="read|write" pattern="PDF" \/>/g' /etc/ImageMagick-6/policy.xml
